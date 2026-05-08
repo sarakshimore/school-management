@@ -308,7 +308,7 @@ Import this file into Postman to test the APIs.
 Public API documentation:
 
 ```bash
-https://sarakshi-more.docs.buildwithfern.com/school-management-api/introduction
+https://documenter.getpostman.com/view/45574715/2sBXqNkdf2
 ```
 
 ---
