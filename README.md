@@ -12,7 +12,7 @@ This project allows users to:
 
 ---
 
-# Features
+## Features
 
 - Add School API
 - List Schools by distance
@@ -25,7 +25,7 @@ This project allows users to:
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 - Node.js
 - Express.js
@@ -35,7 +35,7 @@ This project allows users to:
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```bash
 school-management-api/
@@ -65,15 +65,15 @@ school-management-api/
 
 ---
 
-# API Base URL
+## API Base URL
 
-## Local
+### Local
 
 ```bash
 http://localhost:5000
 ```
 
-## Production
+### Production
 
 ```bash
 
@@ -81,9 +81,9 @@ http://localhost:5000
 
 ---
 
-# Setup Instructions
+## Setup Instructions
 
-## 1. Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/your-username/school-management-api.git
@@ -95,7 +95,7 @@ cd school-management
 
 ---
 
-# Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -103,7 +103,7 @@ npm install
 
 ---
 
-# Environment Variables
+### 3. Environment Variables
 
 Create a `.env` file in the root directory.
 
@@ -118,9 +118,9 @@ DB_NAME=school_management
 
 ---
 
-# Docker Setup (MySQL)
+### 4. Docker Setup (MySQL)
 
-## Start MySQL Container
+#### Start MySQL Container
 
 ```bash
 docker compose up -d
@@ -128,7 +128,7 @@ docker compose up -d
 
 ---
 
-## Verify Running Containers
+#### Verify Running Containers
 
 ```bash
 docker ps
@@ -136,7 +136,7 @@ docker ps
 
 ---
 
-## Stop Containers
+#### Stop Containers
 
 ```bash
 docker compose down
@@ -144,15 +144,15 @@ docker compose down
 
 ---
 
-# Run Application
+### 5. Run Application
 
-## Development Mode
+#### Development Mode
 
 ```bash
 npm run dev
 ```
 
-## Production Mode
+#### Production Mode
 
 ```bash
 node app.js
@@ -160,9 +160,9 @@ node app.js
 
 ---
 
-# Database Schema
+## Database Schema
 
-## Schools Table
+### Schools Table
 
 | Column    | Type              |
 | --------- | ----------------- |
@@ -174,13 +174,13 @@ node app.js
 
 ---
 
-# API Endpoints
+## API Endpoints
 
-# 1. Add School
+### 1. Add School
 
 Adds a new school to the database.
 
-## Endpoint
+#### Endpoint
 
 ```http
 POST /api/addSchool
@@ -188,7 +188,7 @@ POST /api/addSchool
 
 ---
 
-## Request Body
+#### Request Body
 
 ```json
 {
@@ -201,7 +201,7 @@ POST /api/addSchool
 
 ---
 
-## Success Response
+#### Success Response
 
 ```json
 {
@@ -213,7 +213,7 @@ POST /api/addSchool
 
 ---
 
-## Validation Rules
+#### Validation Rules
 
 * name is required
 * address is required
@@ -222,11 +222,11 @@ POST /api/addSchool
 
 ---
 
-# 2. List Schools
+### 2. List Schools
 
 Returns all schools sorted by nearest distance from the user's location.
 
-## Endpoint
+##### Endpoint
 
 ```http
 GET /api/listSchools
@@ -234,7 +234,7 @@ GET /api/listSchools
 
 ---
 
-## Query Parameters
+#### Query Parameters
 
 | Parameter | Type  |
 | --------- | ----- |
@@ -243,7 +243,7 @@ GET /api/listSchools
 
 ---
 
-## Example Request
+#### Example Request
 
 ```http
 GET /api/listSchools?latitude=19.0760&longitude=72.8777
@@ -251,7 +251,7 @@ GET /api/listSchools?latitude=19.0760&longitude=72.8777
 
 ---
 
-## Success Response
+#### Success Response
 
 ```json
 {
@@ -280,7 +280,7 @@ GET /api/listSchools?latitude=19.0760&longitude=72.8777
 
 ---
 
-# Distance Calculation
+## Distance Calculation
 
 The API uses the Haversine Formula to calculate the geographical distance between:
 
@@ -291,7 +291,7 @@ Schools are returned sorted from nearest to farthest.
 
 ---
 
-# Postman Collection
+## Postman Collection
 
 The exported Postman collection is available in:
 
@@ -303,17 +303,17 @@ Import this file into Postman to test the APIs.
 
 ---
 
-# API Documentation
+## API Documentation
 
 Public API documentation:
 
 ```bash
-https://your-fern-docs-link.com
+https://sarakshi-more.docs.buildwithfern.com/school-management-api/introduction
 ```
 
 ---
 
-# Deployment
+## Deployment
 
 The API can be deployed using:
 
@@ -323,7 +323,7 @@ The API can be deployed using:
 
 ---
 
-# Sample Test Data
+## Sample Test Data
 
 ```json
 {
@@ -345,15 +345,15 @@ The API can be deployed using:
 
 ---
 
-# Scripts
+## Scripts
 
-## Start Server
+### Start Server
 
 ```bash
 npm start
 ```
 
-## Development Server
+### Development Server
 
 ```bash
 npm run dev
@@ -361,6 +361,6 @@ npm run dev
 
 ---
 
-# Author
+## Author
 
 Sarakshi More
