@@ -1,0 +1,84 @@
+{
+  "info": {
+    "_postman_id": "8acbf587-06e2-4d47-be37-b3e8826e5aa0",
+    "name": "School Management API",
+    "description": "APIs for adding schools and listing schools by proximity.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45574715"
+  },
+  "item": [
+    {
+      "name": "List Schools",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/listSchools?latitude=19.05&longitude=72.85",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "19.05"
+            },
+            {
+              "key": "longitude",
+              "value": "72.85"
+            }
+          ]
+        },
+        "description": "Returns schools sorted by nearest distance.\n\nQuery Params:\n\n- latitude\n    \n- longitude"
+      },
+      "response": []
+    },
+    {
+      "name": "Add School",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Sunrise International School\",\r\n  \"address\": \"Andheri West, Mumbai, Maharashtra\",\r\n  \"latitude\": 19.1368,\r\n  \"longitude\": 72.8273\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        },
+        "description": "Adds a new school to the database.\n\nRequired Fields:\n\n- name\n    \n- address\n    \n- latitude\n    \n- longitude"
+      },
+      "response": []
+    }
+  ]
+}
