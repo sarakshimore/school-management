@@ -146,16 +146,8 @@ docker compose down
 
 ### 5. Run Application
 
-#### Development Mode
-
 ```bash
-npm run dev
-```
-
-#### Production Mode
-
-```bash
-node app.js
+nodemon app.js
 ```
 
 ---
@@ -341,22 +333,6 @@ The API can be deployed using:
   "latitude": 19.2307,
   "longitude": 72.8567
 }
-```
-
----
-
-## Scripts
-
-### Start Server
-
-```bash
-npm start
-```
-
-### Development Server
-
-```bash
-npm run dev
 ```
 
 ---
